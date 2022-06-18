@@ -1,0 +1,149 @@
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+	background: gray;
+	font-size:22px;
+	line-height: 32px;
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+	}
+
+h1{
+    text-align: center;
+}
+
+section {
+	margin-top: 50px;
+	font-size:20px;
+	font-family: 'Bree Serif', 'serif';
+    background-color: white;
+    text-align:justify;
+}
+
+.flexPresentation{
+	display: flex;
+}
+
+.flexArticle{
+	flex: 1 1 auto;
+	margin-left: 5px;
+}
+
+.centre{
+	text-align: center;
+}
+
+.acquis{
+	color: darkgreen;
+}
+
+.approfondir{
+	color:darkorange;
+}
+
+.nonvalide{
+	color:darkred;
+}
+
+h3{
+	text-decoration: underline;
+}
+
+nav {
+	margin: 50px 0;
+	background-color: rgb(200, 191, 231);
+}
+
+footer{
+    background-color: rgb(200, 191, 231);
+    position:fixed;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    border: solid black 2px;
+    text-align: center;
+}
+
+td a{
+    text-decoration: none;
+    color: black;
+    display:block;
+    padding:50px 50px;
+}
+
+#rouge  {background-color:rgb(192, 0, 0);   }
+#orange {background-color:rgb(247,145,82);  }
+#jaune  {background-color:rgb(255, 192, 0); }
+#vert   {background-color:rgb(146,208,80);  }
+#bleu   {background-color:rgb(7,52,143);    }
+#violer {background-color:rgb(124,1,190);   }
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: rgb(200, 191, 231);
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:black;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #000000;
+    color:white
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' ⍗'; }
+li > a:only-child:after { content: ''; }
